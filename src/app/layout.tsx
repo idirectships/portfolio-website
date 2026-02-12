@@ -218,8 +218,8 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
       </head>
-      <body className="font-mono antialiased">
-        <div className="terminal-container">{children}</div>
+      <body className="font-sans antialiased">
+        {children}
       </body>
     </html>
   );

@@ -9,41 +9,38 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        terminal: {
-          bg: 'var(--terminal-bg)',
-          fg: 'var(--terminal-fg)',
-          border: 'var(--terminal-border)',
-          prompt: 'var(--terminal-prompt)',
-          success: 'var(--terminal-success)',
-          error: 'var(--terminal-error)',
-          warning: 'var(--terminal-warning)',
-          cursor: 'var(--terminal-cursor)',
-          selection: 'var(--terminal-selection)',
-          accent: 'var(--terminal-prompt)', // Add accent color for consistency
+        bg: {
+          primary: '#0a0a0a',
+          secondary: '#141414',
+          tertiary: '#1a1a1a',
         },
-        syntax: {
-          keyword: 'var(--syntax-keyword)',
-          string: 'var(--syntax-string)',
-          number: 'var(--syntax-number)',
-          comment: 'var(--syntax-comment)',
-          function: 'var(--syntax-function)',
+        text: {
+          primary: '#fafafa',
+          secondary: '#a1a1a1',
         },
+        accent: {
+          DEFAULT: '#3b82f6',
+          hover: '#2563eb',
+        },
+        border: '#262626',
       },
       fontFamily: {
+        sans: [
+          'Inter',
+          'system-ui',
+          '-apple-system',
+          'Segoe UI',
+          'Roboto',
+          'sans-serif',
+        ],
         mono: ['JetBrains Mono', 'Courier New', 'monospace'],
-      },
-      animation: {
-        blink: 'blink 1s infinite',
       },
       screens: {
         xs: '480px',
-        touch: { raw: '(hover: none) and (pointer: coarse)' },
       },
       spacing: {
         'safe-top': 'env(safe-area-inset-top)',
         'safe-bottom': 'env(safe-area-inset-bottom)',
-        'safe-left': 'env(safe-area-inset-left)',
-        'safe-right': 'env(safe-area-inset-right)',
       },
     },
   },
