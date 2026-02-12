@@ -13,10 +13,19 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+
         <About />
-        <Projects />
+
+        <div className="section-alt">
+          <Projects />
+        </div>
+
         <Skills />
-        <Experience />
+
+        <div className="section-alt">
+          <Experience />
+        </div>
+
         <Contact />
       </main>
       <Footer />

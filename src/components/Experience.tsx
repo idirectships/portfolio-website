@@ -8,23 +8,30 @@ export default function Experience() {
 
       <div className="relative">
         {/* Vertical line */}
-        <div className="absolute left-0 md:left-4 top-0 bottom-0 w-px bg-line" />
+        <div className="absolute left-[5px] md:left-[21px] top-2 bottom-0 w-px bg-gradient-to-b from-accent/40 via-line to-transparent" />
 
-        <div className="space-y-10 pl-8 md:pl-14">
+        <div className="space-y-12 pl-8 md:pl-14">
           {experience.map((role, i) => (
-            <div key={i} className="relative">
+            <div key={i} className="relative group">
               {/* Dot */}
-              <div className="absolute -left-8 md:-left-14 top-1.5 w-3 h-3 rounded-full bg-accent border-2 border-surface" />
+              <div className="absolute -left-8 md:-left-14 top-1.5 w-3 h-3 rounded-full bg-accent border-[3px] border-surface transition-shadow duration-300 group-hover:shadow-[0_0_8px_rgba(59,130,246,0.4)]" />
 
-              <div className="text-sm font-mono text-accent mb-1">{role.period}</div>
-              <h3 className="text-lg font-semibold text-content">{role.title}</h3>
-              <div className="text-sm text-content-muted mb-2">{role.company}</div>
-              <p className="text-sm text-content-muted mb-3">{role.description}</p>
+              <div className="text-xs font-mono text-accent/80 mb-1.5 tracking-wide">
+                {role.period}
+              </div>
+              <h3 className="text-xl font-semibold text-content mb-0.5">{role.title}</h3>
+              <div className="text-sm text-content-muted font-mono mb-3">{role.company}</div>
+              <p className="text-sm text-content-muted leading-relaxed mb-4">
+                {role.description}
+              </p>
 
-              <ul className="space-y-1">
+              <ul className="space-y-2">
                 {role.highlights.map((h, j) => (
-                  <li key={j} className="text-sm text-content-muted flex items-start gap-2">
-                    <span className="text-accent mt-1 shrink-0">&#8226;</span>
+                  <li
+                    key={j}
+                    className="text-sm text-content-muted flex items-start gap-2.5"
+                  >
+                    <span className="text-accent/60 mt-1.5 shrink-0 w-1 h-1 rounded-full bg-accent/60" />
                     {h}
                   </li>
                 ))}
@@ -34,9 +41,12 @@ export default function Experience() {
         </div>
       </div>
 
-      <div className="mt-12 pt-8 border-t border-line">
-        <div className="text-sm font-mono text-accent mb-1">Education</div>
-        <div className="text-content font-semibold">{education.degree}</div>
+      {/* Education */}
+      <div className="mt-16 pt-8 border-t border-line/60">
+        <div className="text-xs font-mono text-accent/80 mb-2 tracking-wide uppercase">
+          Education
+        </div>
+        <div className="text-lg text-content font-semibold">{education.degree}</div>
         <div className="text-sm text-content-muted">{education.school}</div>
       </div>
     </section>

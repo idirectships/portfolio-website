@@ -26,14 +26,14 @@ const config: Config = {
       },
       fontFamily: {
         sans: [
-          'Inter',
+          'var(--font-inter)',
           'system-ui',
           '-apple-system',
           'Segoe UI',
           'Roboto',
           'sans-serif',
         ],
-        mono: ['JetBrains Mono', 'Courier New', 'monospace'],
+        mono: ['var(--font-mono)', 'Courier New', 'monospace'],
       },
       screens: {
         xs: '480px',

@@ -1,11 +1,24 @@
 import type { Metadata, Viewport } from 'next';
+import { Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-mono',
+  display: 'swap',
+});
 
 const siteConfig = {
   name: 'Andrew Garman',
   title: 'Andrew Garman - AI Implementation Specialist',
   description:
-    "Portfolio of Andrew 'Dru' Garman - AI Implementation Specialist and ex-FAANG recruiter transitioning to AI engineering. Explore projects, skills, and professional journey through an interactive terminal interface.",
+    'AI Implementation Specialist, ex-FAANG recruiter, and full-stack engineer building AI-powered products in Phoenix, AZ.',
   url: 'https://andrewgarman.dev',
   ogImage: '/og-image.png',
   creator: 'Andrew Garman',
@@ -16,13 +29,11 @@ const siteConfig = {
     'Portfolio',
     'FAANG Recruiter',
     'AI Engineering',
-    'Terminal Interface',
     'Next.js',
     'TypeScript',
     'React',
-    'Web Development',
-    'Career Transition',
-    'Technical Recruiting',
+    'Full Stack Developer',
+    'Phoenix AZ',
   ],
 };
 
@@ -34,16 +45,10 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,
-  authors: [
-    {
-      name: siteConfig.creator,
-      url: siteConfig.url,
-    },
-  ],
+  authors: [{ name: siteConfig.creator, url: siteConfig.url }],
   creator: siteConfig.creator,
   publisher: siteConfig.creator,
 
-  // Open Graph
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -61,7 +66,6 @@ export const metadata: Metadata = {
     ],
   },
 
-  // Twitter
   twitter: {
     card: 'summary_large_image',
     title: siteConfig.title,
@@ -70,7 +74,6 @@ export const metadata: Metadata = {
     creator: '@drewgarman',
   },
 
-  // Additional meta tags
   robots: {
     index: true,
     follow: true,
@@ -83,36 +86,16 @@ export const metadata: Metadata = {
     },
   },
 
-  // Verification (add when available)
-  // verification: {
-  //   google: 'your-verification-code',
-  // },
-
-  // Canonical URL
   alternates: {
     canonical: siteConfig.url,
   },
 
-  // Additional metadata
   category: 'technology',
   classification: 'Portfolio Website',
-
-  // App-specific metadata
   applicationName: siteConfig.name,
-  appleWebApp: {
-    capable: true,
-    statusBarStyle: 'black-translucent',
-    title: siteConfig.name,
-  },
 
-  // Manifest
-  manifest: '/manifest.json',
-
-  // Icons
   icons: {
     icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
   },
 };
 
@@ -121,13 +104,9 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#000000' },
-  ],
+  themeColor: '#0a0a0a',
 };
 
-// Structured data for SEO
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Person',
@@ -167,55 +146,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <head>
-        {/* Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(structuredData),
           }}
-        />
-
-        {/* Preconnect to external domains for performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-
-        {/* DNS prefetch for external resources */}
-        <link rel="dns-prefetch" href="//www.google-analytics.com" />
-
-        {/* Additional meta tags */}
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta
-          name="apple-mobile-web-app-status-bar-style"
-          content="black-translucent"
-        />
-
-        {/* Security headers */}
-        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
-        <meta httpEquiv="X-Frame-Options" content="DENY" />
-        <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
-
-        {/* Performance hints */}
-        <link
-          rel="preload"
-          href="/fonts/GeistVF.woff"
-          as="font"
-          type="font/woff"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/GeistMonoVF.woff"
-          as="font"
-          type="font/woff"
-          crossOrigin="anonymous"
         />
       </head>
       <body className="font-sans antialiased">
