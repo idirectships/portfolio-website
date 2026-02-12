@@ -1,0 +1,19 @@
+{
+  "primary": [
+    "Python",
+    "FastAPI",
+    "React"
+  ],
+  "secondary": [
+    "PostgreSQL",
+    "OpenAI API",
+    "Docker"
+  ],
+  "deployment": [
+    "Vercel",
+    "Railway",
+    "Docker",
+    "Supabase"
+  ],
+  "lastUpdated": "2026-01-12T02:19:06.735Z"
+}

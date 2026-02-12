@@ -1,0 +1,73 @@
+{
+  "programming": [
+    {
+      "name": "Python",
+      "level": "proficient",
+      "context": "AI/ML development, automation, data analysis"
+    },
+    {
+      "name": "TypeScript",
+      "level": "proficient",
+      "context": "Web development, tooling, type-safe applications"
+    },
+    {
+      "name": "JavaScript",
+      "level": "expert",
+      "context": "Full-stack development, React applications"
+    },
+    {
+      "name": "SQL",
+      "level": "proficient",
+      "context": "Data analysis, database design, query optimization"
+    }
+  ],
+  "ai_ml": [
+    {
+      "name": "TensorFlow",
+      "level": "beginner",
+      "context": "Model training and deployment"
+    },
+    {
+      "name": "PyTorch",
+      "level": "beginner",
+      "context": "Research and experimentation"
+    },
+    {
+      "name": "Scikit-learn",
+      "level": "proficient",
+      "context": "Classical ML algorithms and data preprocessing"
+    },
+    {
+      "name": "Pandas",
+      "level": "proficient",
+      "context": "Data manipulation and analysis"
+    },
+    {
+      "name": "OpenAI API",
+      "level": "proficient",
+      "context": "LLM integration and prompt engineering"
+    }
+  ],
+  "web_development": [
+    {
+      "name": "React",
+      "level": "expert",
+      "context": "Component-based UI development"
+    },
+    {
+      "name": "Next.js",
+      "level": "proficient",
+      "context": "Full-stack React applications"
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": "proficient",
+      "context": "Utility-first styling and responsive design"
+    },
+    {
+      "name": "Node.js",
+      "level": "proficient",
+      "context": "Backend development and API creation"
+    }
+  ]
+}

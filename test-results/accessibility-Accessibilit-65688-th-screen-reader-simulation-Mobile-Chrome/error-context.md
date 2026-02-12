@@ -1,0 +1,63 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - application "Interactive terminal portfolio interface" [ref=e3]:
+    - status [ref=e4]:
+      - generic [ref=e5]: "Command output: ║ █████╗ ███╗ ██╗██████╗ █"
+      - generic [ref=e6]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ██"
+      - generic [ref=e7]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ███"
+      - generic [ref=e8]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ████"
+      - generic [ref=e9]: "Command output: ║ █████╗ ███╗ ██╗██████╗ █████"
+      - generic [ref=e10]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ██████"
+      - generic [ref=e11]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ███████"
+      - generic [ref=e12]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ██████╗█"
+      - generic [ref=e13]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ██████╗ █"
+      - generic [ref=e14]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ██████╗ ██"
+      - generic [ref=e15]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ██████╗ ███"
+      - generic [ref=e16]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ██████╗ ████"
+      - generic [ref=e17]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ██████╗ █████"
+      - generic [ref=e18]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ██████╗ ██████"
+      - generic [ref=e19]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ██████╗ ███████"
+      - generic [ref=e20]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ██████╗ ████████"
+      - generic [ref=e21]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ██████╗ ███████╗█"
+      - generic [ref=e22]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ██████╗ ███████╗██"
+      - generic [ref=e23]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ██████╗ ███████╗███"
+      - generic [ref=e24]: "Command output: ║ █████╗ ███╗ ██╗██████╗ ██████╗ ███████╗██╗█"
+    - generic [ref=e25]:
+      - banner [ref=e26]:
+        - generic [ref=e27]:
+          - group "Window controls" [ref=e28]:
+            - button "Close window (decorative)" [ref=e29] [cursor=pointer]
+            - button "Minimize window (decorative)" [ref=e30] [cursor=pointer]
+            - button "Maximize window (decorative)" [ref=e31] [cursor=pointer]
+          - heading "Andrew Garman - Portfolio Terminal" [level=1] [ref=e32]
+          - button "Open navigation menu" [ref=e33] [cursor=pointer]: 📁
+      - main "Terminal interface" [ref=e34]:
+        - log "Terminal output" [ref=e35]:
+          - status [ref=e36]: Initializing terminal...
+          - generic [ref=e38]: ╔══════════════════════════════════════════════════════════════╗
+          - generic [ref=e40]: ║ ║
+          - generic [ref=e42]: ║ █████╗ ███╗ ██╗██████╗ ██████╗ ███████╗██╗█
+        - group "Command input" [ref=e43]:
+          - generic [ref=e44]: ~$
+          - combobox "Terminal command input" [ref=e46]
+        - generic [ref=e48]: Terminal command interface. Type commands like ls, cd, cat, help. Use arrow keys for command history, tab for completion.
+        - group "Quick commands" [ref=e49]:
+          - button "Execute ls command" [ref=e50] [cursor=pointer]: ls
+          - button "Execute cd ~ command" [ref=e51] [cursor=pointer]: cd ~
+          - button "Execute help command" [ref=e52] [cursor=pointer]: help
+          - button "Execute clear command" [ref=e53] [cursor=pointer]: clear
+      - contentinfo [ref=e54]:
+        - paragraph [ref=e55]: Built with Next.js 14 • TypeScript • Tailwind CSS
+        - paragraph [ref=e56]: Tap 📁 for navigation • Type "help" for commands
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - heading "Privacy-Friendly Analytics" [level=3] [ref=e61]
+        - paragraph [ref=e62]: This portfolio uses privacy-compliant analytics to understand how visitors interact with the terminal interface. No personal data is collected, and all data stays in your browser.
+      - generic [ref=e63]:
+        - button "Learn More" [ref=e64] [cursor=pointer]
+        - button "Decline" [ref=e65] [cursor=pointer]
+        - button "Accept" [ref=e66] [cursor=pointer]
+  - alert [ref=e67]
+```

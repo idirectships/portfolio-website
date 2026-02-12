@@ -1,0 +1,257 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - application "Interactive terminal portfolio interface" [ref=e3]:
+    - status [ref=e4]:
+      - generic [ref=e5]: "Command output: ║ █"
+      - generic [ref=e6]: "Command output: ║ █"
+      - generic [ref=e7]: "Command output: ║ █"
+      - generic [ref=e8]: "Command output: ║ █"
+      - generic [ref=e9]: "Command output: ║ █"
+      - generic [ref=e10]: "Command output: ║ █"
+      - generic [ref=e11]: "Command output: ║ █"
+      - generic [ref=e12]: "Command output: ║ █"
+      - generic [ref=e13]: "Command output: ║ █"
+      - generic [ref=e14]: "Command output: ║ █"
+      - generic [ref=e15]: "Command output: ║ █"
+      - generic [ref=e16]: "Command output: ║ █"
+      - generic [ref=e17]: "Command output: ║ █"
+      - generic [ref=e18]: "Command output: ║ █"
+      - generic [ref=e19]: "Command output: ║ █"
+      - generic [ref=e20]: "Command output: ║ █"
+      - generic [ref=e21]: "Command output: ║ █"
+      - generic [ref=e22]: "Command output: ║ █"
+      - generic [ref=e23]: "Command output: ║ █"
+    - generic [ref=e24]:
+      - banner [ref=e25]:
+        - generic [ref=e26]:
+          - group "Window controls" [ref=e27]:
+            - button "Close window (decorative)" [ref=e28] [cursor=pointer]
+            - button "Minimize window (decorative)" [ref=e29] [cursor=pointer]
+            - button "Maximize window (decorative)" [ref=e30] [cursor=pointer]
+          - heading "Andrew Garman - Portfolio Terminal" [level=1] [ref=e31]
+        - generic "Current time" [ref=e32]:
+          - time [ref=e33]: 1/11/2026, 7:40:33 PM
+      - generic [ref=e34]:
+        - main "Terminal interface" [ref=e35]:
+          - log "Terminal output" [ref=e36]:
+            - status [ref=e37]: Initializing terminal...
+            - generic [ref=e39]: ╔══════════════════════════════════════════════════════════════╗
+            - generic [ref=e41]: ║ █
+          - group "Command input" [ref=e42]:
+            - generic [ref=e43]: dru@portfolio:~$
+            - combobox "Terminal command input" [ref=e45]
+          - generic [ref=e47]: Terminal command interface. Type commands like ls, cd, cat, help. Use arrow keys for command history, tab for completion.
+        - complementary "File system navigation" [ref=e48]:
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - heading "File System" [level=3] [ref=e51]
+              - generic [ref=e52]: "Current: ~"
+            - generic [ref=e54]:
+              - generic [ref=e55] [cursor=pointer]:
+                - generic [ref=e56]: ▼
+                - generic [ref=e57]: 📂
+                - generic [ref=e58]: ~/
+              - generic [ref=e59]:
+                - generic [ref=e60]:
+                  - generic [ref=e61] [cursor=pointer]:
+                    - generic [ref=e62]: ▼
+                    - generic [ref=e63]: 📂
+                    - generic [ref=e64]: artist/
+                  - generic [ref=e65]:
+                    - generic [ref=e67] [cursor=pointer]:
+                      - generic [ref=e68]: 📄
+                      - generic [ref=e69]: bio.md
+                    - generic [ref=e71] [cursor=pointer]:
+                      - generic [ref=e72]: 📄
+                      - generic [ref=e73]: philosophy.txt
+                    - generic [ref=e75] [cursor=pointer]:
+                      - generic [ref=e76]: 📅
+                      - generic [ref=e77]: journey.timeline
+                    - generic [ref=e79] [cursor=pointer]:
+                      - generic [ref=e80]: 📁
+                      - generic [ref=e81]: influences/
+                - generic [ref=e82]:
+                  - generic [ref=e83] [cursor=pointer]:
+                    - generic [ref=e84]: ▼
+                    - generic [ref=e85]: 📂
+                    - generic [ref=e86]: studio/
+                  - generic [ref=e87]:
+                    - generic [ref=e88]:
+                      - generic [ref=e89] [cursor=pointer]:
+                        - generic [ref=e90]: ▼
+                        - generic [ref=e91]: 📂
+                        - generic [ref=e92]: toolbox/
+                      - generic [ref=e93]:
+                        - generic [ref=e95] [cursor=pointer]:
+                          - generic [ref=e96]: 📋
+                          - generic [ref=e97]: languages.json
+                        - generic [ref=e99] [cursor=pointer]:
+                          - generic [ref=e100]: 📋
+                          - generic [ref=e101]: frameworks.yaml
+                        - generic [ref=e103] [cursor=pointer]:
+                          - generic [ref=e104]: 📄
+                          - generic [ref=e105]: tools.md
+                    - generic [ref=e107] [cursor=pointer]:
+                      - generic [ref=e108]: 📁
+                      - generic [ref=e109]: certifications/
+                    - generic [ref=e111] [cursor=pointer]:
+                      - generic [ref=e112]: 📄
+                      - generic [ref=e113]: workspace-setup.md
+                - generic [ref=e114]:
+                  - generic [ref=e115] [cursor=pointer]:
+                    - generic [ref=e116]: ▼
+                    - generic [ref=e117]: 📂
+                    - generic [ref=e118]: projects/
+                  - generic [ref=e119]:
+                    - generic [ref=e121] [cursor=pointer]:
+                      - generic [ref=e122]: 📄
+                      - generic [ref=e123]: project-index.md
+                    - generic [ref=e124]:
+                      - generic [ref=e125] [cursor=pointer]:
+                        - generic [ref=e126]: ▼
+                        - generic [ref=e127]: 📂
+                        - generic [ref=e128]: web-apps/
+                      - generic [ref=e129]:
+                        - generic [ref=e130]:
+                          - generic [ref=e131] [cursor=pointer]:
+                            - generic [ref=e132]: ▼
+                            - generic [ref=e133]: 📂
+                            - generic [ref=e134]: ai-recruiter-assistant/
+                          - generic [ref=e135]:
+                            - generic [ref=e137] [cursor=pointer]:
+                              - generic [ref=e138]: 📄
+                              - generic [ref=e139]: README.md
+                            - generic [ref=e141] [cursor=pointer]:
+                              - generic [ref=e142]: 📋
+                              - generic [ref=e143]: tech-stack.json
+                            - generic [ref=e145] [cursor=pointer]:
+                              - generic [ref=e146]: 🔗
+                              - generic [ref=e147]: launch.link
+                            - generic [ref=e149] [cursor=pointer]:
+                              - generic [ref=e150]: 📄
+                              - generic [ref=e151]: demo.md
+                        - generic [ref=e152]:
+                          - generic [ref=e153] [cursor=pointer]:
+                            - generic [ref=e154]: ▼
+                            - generic [ref=e155]: 📂
+                            - generic [ref=e156]: portfolio-terminal/
+                          - generic [ref=e157]:
+                            - generic [ref=e159] [cursor=pointer]:
+                              - generic [ref=e160]: 📄
+                              - generic [ref=e161]: README.md
+                            - generic [ref=e163] [cursor=pointer]:
+                              - generic [ref=e164]: 📋
+                              - generic [ref=e165]: tech-stack.json
+                            - generic [ref=e167] [cursor=pointer]:
+                              - generic [ref=e168]: 🔗
+                              - generic [ref=e169]: launch.link
+                    - generic [ref=e170]:
+                      - generic [ref=e171] [cursor=pointer]:
+                        - generic [ref=e172]: ▼
+                        - generic [ref=e173]: 📂
+                        - generic [ref=e174]: client-sites/
+                      - generic [ref=e176]:
+                        - generic [ref=e177] [cursor=pointer]:
+                          - generic [ref=e178]: ▼
+                          - generic [ref=e179]: 📂
+                          - generic [ref=e180]: techcorp-landing/
+                        - generic [ref=e181]:
+                          - generic [ref=e183] [cursor=pointer]:
+                            - generic [ref=e184]: 📄
+                            - generic [ref=e185]: README.md
+                          - generic [ref=e187] [cursor=pointer]:
+                            - generic [ref=e188]: 📋
+                            - generic [ref=e189]: tech-stack.json
+                          - generic [ref=e191] [cursor=pointer]:
+                            - generic [ref=e192]: 🔗
+                            - generic [ref=e193]: launch.link
+                    - generic [ref=e194]:
+                      - generic [ref=e195] [cursor=pointer]:
+                        - generic [ref=e196]: ▼
+                        - generic [ref=e197]: 📂
+                        - generic [ref=e198]: experiments/
+                      - generic [ref=e200]:
+                        - generic [ref=e201] [cursor=pointer]:
+                          - generic [ref=e202]: ▼
+                          - generic [ref=e203]: 📂
+                          - generic [ref=e204]: voice-to-code/
+                        - generic [ref=e205]:
+                          - generic [ref=e207] [cursor=pointer]:
+                            - generic [ref=e208]: 📄
+                            - generic [ref=e209]: README.md
+                          - generic [ref=e211] [cursor=pointer]:
+                            - generic [ref=e212]: 📋
+                            - generic [ref=e213]: tech-stack.json
+                          - generic [ref=e215] [cursor=pointer]:
+                            - generic [ref=e216]: 🔗
+                            - generic [ref=e217]: github.link
+                - generic [ref=e218]:
+                  - generic [ref=e219] [cursor=pointer]:
+                    - generic [ref=e220]: ▼
+                    - generic [ref=e221]: 📂
+                    - generic [ref=e222]: gallery/
+                  - generic [ref=e223]:
+                    - generic [ref=e225] [cursor=pointer]:
+                      - generic [ref=e226]: 📁
+                      - generic [ref=e227]: screenshots/
+                    - generic [ref=e229] [cursor=pointer]:
+                      - generic [ref=e230]: 📁
+                      - generic [ref=e231]: design-mockups/
+                    - generic [ref=e233] [cursor=pointer]:
+                      - generic [ref=e234]: 📁
+                      - generic [ref=e235]: process-videos/
+                    - generic [ref=e237] [cursor=pointer]:
+                      - generic [ref=e238]: 📁
+                      - generic [ref=e239]: ui-components/
+                - generic [ref=e240]:
+                  - generic [ref=e241] [cursor=pointer]:
+                    - generic [ref=e242]: ▼
+                    - generic [ref=e243]: 📂
+                    - generic [ref=e244]: commissions/
+                  - generic [ref=e245]:
+                    - generic [ref=e247] [cursor=pointer]:
+                      - generic [ref=e248]: 📄
+                      - generic [ref=e249]: services.md
+                    - generic [ref=e251] [cursor=pointer]:
+                      - generic [ref=e252]: 📄
+                      - generic [ref=e253]: process.md
+                    - generic [ref=e255] [cursor=pointer]:
+                      - generic [ref=e256]: 📄
+                      - generic [ref=e257]: contact.md
+                - generic [ref=e258]:
+                  - generic [ref=e259] [cursor=pointer]:
+                    - generic [ref=e260]: ▼
+                    - generic [ref=e261]: 📂
+                    - generic [ref=e262]: behind-the-scenes/
+                  - generic [ref=e263]:
+                    - generic [ref=e265] [cursor=pointer]:
+                      - generic [ref=e266]: 📁
+                      - generic [ref=e267]: dev-diary/
+                    - generic [ref=e269] [cursor=pointer]:
+                      - generic [ref=e270]: 📁
+                      - generic [ref=e271]: lessons-learned/
+                    - generic [ref=e273] [cursor=pointer]:
+                      - generic [ref=e274]: 📁
+                      - generic [ref=e275]: tools-review/
+                - generic [ref=e277] [cursor=pointer]:
+                  - generic [ref=e278]: ⚡
+                  - generic [ref=e279]: welcome.sh
+                - generic [ref=e281] [cursor=pointer]:
+                  - generic [ref=e282]: 📄
+                  - generic [ref=e283]: README.md
+            - generic [ref=e284]: Click directories to navigate • Click arrows to expand/collapse
+      - contentinfo [ref=e285]:
+        - paragraph [ref=e286]: Built with Next.js 14 • TypeScript • Tailwind CSS
+        - paragraph [ref=e287]: Use ↑/↓ for command history • Tab for completion • Type "help" for commands
+    - generic [ref=e290]:
+      - generic [ref=e291]:
+        - heading "Privacy-Friendly Analytics" [level=3] [ref=e292]
+        - paragraph [ref=e293]: This portfolio uses privacy-compliant analytics to understand how visitors interact with the terminal interface. No personal data is collected, and all data stays in your browser.
+      - generic [ref=e294]:
+        - button "Learn More" [ref=e295] [cursor=pointer]
+        - button "Decline" [ref=e296] [cursor=pointer]
+        - button "Accept" [ref=e297] [cursor=pointer]
+  - alert [ref=e298]
+```
