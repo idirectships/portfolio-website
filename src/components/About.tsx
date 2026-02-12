@@ -10,7 +10,7 @@ export default function About() {
         {about.highlights.map((h) => (
           <div key={h.label} className="card text-center">
             <div className="text-3xl font-bold text-accent mb-2">{h.stat}</div>
-            <div className="text-sm text-text-secondary">{h.label}</div>
+            <div className="text-sm text-content-muted">{h.label}</div>
           </div>
         ))}
       </div>

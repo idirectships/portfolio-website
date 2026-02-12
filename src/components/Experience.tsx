@@ -8,22 +8,22 @@ export default function Experience() {
 
       <div className="relative">
         {/* Vertical line */}
-        <div className="absolute left-0 md:left-4 top-0 bottom-0 w-px bg-border" />
+        <div className="absolute left-0 md:left-4 top-0 bottom-0 w-px bg-line" />
 
         <div className="space-y-10 pl-8 md:pl-14">
           {experience.map((role, i) => (
             <div key={i} className="relative">
               {/* Dot */}
-              <div className="absolute -left-8 md:-left-14 top-1.5 w-3 h-3 rounded-full bg-accent border-2 border-bg-primary" />
+              <div className="absolute -left-8 md:-left-14 top-1.5 w-3 h-3 rounded-full bg-accent border-2 border-surface" />
 
               <div className="text-sm font-mono text-accent mb-1">{role.period}</div>
-              <h3 className="text-lg font-semibold text-text-primary">{role.title}</h3>
-              <div className="text-sm text-text-secondary mb-2">{role.company}</div>
-              <p className="text-sm text-text-secondary mb-3">{role.description}</p>
+              <h3 className="text-lg font-semibold text-content">{role.title}</h3>
+              <div className="text-sm text-content-muted mb-2">{role.company}</div>
+              <p className="text-sm text-content-muted mb-3">{role.description}</p>
 
               <ul className="space-y-1">
                 {role.highlights.map((h, j) => (
-                  <li key={j} className="text-sm text-text-secondary flex items-start gap-2">
+                  <li key={j} className="text-sm text-content-muted flex items-start gap-2">
                     <span className="text-accent mt-1 shrink-0">&#8226;</span>
                     {h}
                   </li>
@@ -34,10 +34,10 @@ export default function Experience() {
         </div>
       </div>
 
-      <div className="mt-12 pt-8 border-t border-border">
+      <div className="mt-12 pt-8 border-t border-line">
         <div className="text-sm font-mono text-accent mb-1">Education</div>
-        <div className="text-text-primary font-semibold">{education.degree}</div>
-        <div className="text-sm text-text-secondary">{education.school}</div>
+        <div className="text-content font-semibold">{education.degree}</div>
+        <div className="text-sm text-content-muted">{education.school}</div>
       </div>
     </section>
   );

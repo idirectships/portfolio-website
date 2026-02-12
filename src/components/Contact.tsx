@@ -42,7 +42,7 @@ export default function Contact() {
         </a>
       </div>
 
-      <p className="text-sm text-text-secondary mt-8">{contact.location}</p>
+      <p className="text-sm text-content-muted mt-8">{contact.location}</p>
     </section>
   );
 }

@@ -10,11 +10,14 @@
   }
 
   body {
-    @apply bg-bg-primary text-text-primary font-sans;
+    background-color: #0a0a0a;
+    color: #fafafa;
+    @apply font-sans;
   }
 
   ::selection {
-    @apply bg-accent/20 text-text-primary;
+    background-color: rgb(59 130 246 / 0.2);
+    color: #fafafa;
   }
 }
 
@@ -24,23 +27,23 @@
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-4 text-text-primary;
+    @apply text-3xl md:text-4xl font-bold mb-4 text-content;
   }
 
   .section-subtitle {
-    @apply text-text-secondary text-lg mb-12;
+    @apply text-content-muted text-lg mb-12;
   }
 
   .card {
-    @apply bg-bg-secondary border border-border rounded-xl p-6 transition-all duration-200;
+    @apply bg-surface-raised border border-line rounded-xl p-6 transition-all duration-200;
   }
 
   .card:hover {
-    @apply border-accent/30 bg-bg-tertiary;
+    @apply border-accent/30 bg-surface-overlay;
   }
 
   .badge {
-    @apply inline-block px-3 py-1 text-xs font-mono rounded-full bg-bg-tertiary text-text-secondary border border-border;
+    @apply inline-block px-3 py-1 text-xs font-mono rounded-full bg-surface-overlay text-content-muted border border-line;
   }
 
   .btn-primary {
@@ -48,7 +51,7 @@
   }
 
   .btn-outline {
-    @apply inline-flex items-center gap-2 px-6 py-3 border border-border text-text-primary font-medium rounded-lg transition-colors hover:border-accent hover:text-accent;
+    @apply inline-flex items-center gap-2 px-6 py-3 border border-line text-content font-medium rounded-lg transition-colors hover:border-accent hover:text-accent;
   }
 }
 

@@ -23,11 +23,11 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-200 ${
-        scrolled ? 'bg-bg-primary/90 backdrop-blur-md border-b border-border' : 'bg-transparent'
+        scrolled ? 'bg-surface/90 backdrop-blur-md border-b border-line' : 'bg-transparent'
       }`}
     >
       <div className="max-w-5xl mx-auto px-6 flex items-center justify-between h-16">
-        <a href="#" className="text-text-primary font-bold text-lg">
+        <a href="#" className="text-content font-bold text-lg">
           AG
         </a>
 
@@ -37,7 +37,7 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-text-secondary hover:text-text-primary transition-colors"
+                className="text-sm text-content-muted hover:text-content transition-colors"
               >
                 {link.label}
               </a>
@@ -47,7 +47,7 @@ export default function Navbar() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-text-secondary hover:text-text-primary"
+          className="md:hidden text-content-muted hover:text-content"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -63,13 +63,13 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-bg-primary/95 backdrop-blur-md border-b border-border">
+        <div className="md:hidden bg-surface/95 backdrop-blur-md border-b border-line">
           <ul className="px-6 py-4 space-y-4">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="block text-text-secondary hover:text-text-primary transition-colors"
+                  className="block text-content-muted hover:text-content transition-colors"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}

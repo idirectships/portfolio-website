@@ -24,7 +24,7 @@ export default function Skills() {
           <h3 className="text-sm font-mono text-accent mb-3">Certifications</h3>
           <div className="flex flex-wrap gap-2">
             {certifications.map((cert) => (
-              <span key={cert} className="badge border-accent/30 text-text-primary">
+              <span key={cert} className="badge border-accent/30 text-content">
                 {cert}
               </span>
             ))}

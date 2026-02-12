@@ -9,20 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: {
-          primary: '#0a0a0a',
-          secondary: '#141414',
-          tertiary: '#1a1a1a',
+        surface: {
+          DEFAULT: '#0a0a0a',
+          raised: '#141414',
+          overlay: '#1a1a1a',
         },
-        text: {
-          primary: '#fafafa',
-          secondary: '#a1a1a1',
+        content: {
+          DEFAULT: '#fafafa',
+          muted: '#a1a1a1',
         },
         accent: {
           DEFAULT: '#3b82f6',
           hover: '#2563eb',
         },
-        border: '#262626',
+        line: '#262626',
       },
       fontFamily: {
         sans: [
